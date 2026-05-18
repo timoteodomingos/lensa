@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://linebox.no",
+  "url": "https://linebox.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 823356692,
+    "name": "LINEBOX AS",
+    "activity": "Godstransport og alt som er knyttet naturlig til dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:38.865457+00:00"
+}

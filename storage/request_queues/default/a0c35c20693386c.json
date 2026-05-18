@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://bring.no",
+  "url": "https://bring.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 984661185,
+    "name": "POSTEN BRING AS",
+    "activity": "På forretningsmessig grunnlag drive post- og logistikkvirksomhet, samt annen virksomhet som står i direkte sammenheng med dette. Virksomheten kan drives av selskapet selv, av heleide datterselskaper, eller gjennom andre selskaper det har eierandeler i eller samarbeider med. Selskapet skal være en tilbyder som kan møte samfunnets behov for landsdekkende posttjenester."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:34.197725+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://fibber.no",
+  "url": "https://fibber.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 916838816,
+    "name": "FIBBER AS",
+    "activity": "Rådgivning, prosjektering og utføring av installasjonsarbeider innen telekommunikasjonsfaget, samt salg av utstyr, materiell og servicetjenester relatert til telekommunikasjon og relaterte systemer."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.927482+00:00"
+}

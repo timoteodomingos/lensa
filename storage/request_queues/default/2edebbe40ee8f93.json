@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://theplnr.com",
+  "url": "https://theplnr.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 927080907,
+    "name": "THE PLNR CO AS",
+    "activity": "Utvikle, produsere, markedsføre, distribuere og selge produkter og tjenester innenfor produktivitet, ledelse, kreativitet og forretningsutvikling. Videre kan selskapet tilby rådgivning, design, markedsføring, mentoring og annen tilknyttet virksomhet. Selskapet kan også delta i andre selskaper, foreta investeringer og drive virksomhet som står i naturlig sammenheng med dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.244782+00:00"
+}

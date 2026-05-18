@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://billakkspesialisten.no",
+  "url": "https://billakkspesialisten.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 851602402,
+    "name": "BILLAKKSPESIALISTEN AS",
+    "activity": "Handelsvirksomhet og hva dermed står i forbindelse samt deltakelse i andre selskaper med lignende virksomhet."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.465254+00:00"
+}

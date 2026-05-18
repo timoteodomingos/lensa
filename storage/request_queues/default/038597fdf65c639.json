@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://eikannenetage.no",
+  "url": "https://eikannenetage.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 987903961,
+    "name": "ANNEN ETAGE AS",
+    "activity": "Restaurantdrift og hva som dermed står i naturlig forbindelse."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:38.389722+00:00"
+}

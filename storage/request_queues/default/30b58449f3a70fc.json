@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://wolt.com",
+  "url": "https://wolt.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 929553446,
+    "name": "KVÆRNER BAKERI OG PIZZA AS",
+    "activity": "Produksjon av bakevarer, pizza og varme matvarer."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:22.036026+00:00"
+}

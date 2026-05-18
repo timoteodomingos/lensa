@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://bluefrontequity.com",
+  "url": "https://bluefrontequity.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 935486866,
+    "name": "BLUEFRONT X TOPCO AS",
+    "activity": "Å investere i, eie og utvikle andre selskaper og alt som står i forbindelse med dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:39.673976+00:00"
+}

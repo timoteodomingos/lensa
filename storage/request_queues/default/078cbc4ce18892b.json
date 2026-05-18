@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://planr.team",
+  "url": "https://planr.team",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 935745497,
+    "name": "PLANR AS",
+    "activity": "Selge varer og tjenester innen programvare - og annet som naturlig sammenfaller med dette - samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:32.498414+00:00"
+}

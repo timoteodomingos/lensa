@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://hpe.no",
+  "url": "https://hpe.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 918891919,
+    "name": "HEWLETT-PACKARD NORGE AS",
+    "activity": "Handel og all hermed forbundet virksomhet."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.647937+00:00"
+}

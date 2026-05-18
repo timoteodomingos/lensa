@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://opulens.no",
+  "url": "https://opulens.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 955603451,
+    "name": "OPULENS AS",
+    "activity": "Deltagelse i selskaper innen eiendomsdrift, og å eie egne eiendommer, samt å selge konsulenttjenester."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:29.749027+00:00"
+}

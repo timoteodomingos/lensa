@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://protectoria.com",
+  "url": "https://protectoria.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 920971539,
+    "name": "PROTECTORIA VENTURE AS",
+    "activity": "Levering av innovative, digitale identifiserings- autentiserings- og signaturtjenester og andre produkter som naturlig faller sammen med dette, herunder å delta i andre selskaper med lignende virksomhet, kjøp og salg av aksjer, eller på annen måte gjøre seg interessert i andre foretagender."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:30.569952+00:00"
+}

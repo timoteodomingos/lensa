@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://frognertaxi.com",
+  "url": "https://frognertaxi.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 934053923,
+    "name": "FROGNER TAXI AS",
+    "activity": "Transport drosje."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:36.035657+00:00"
+}

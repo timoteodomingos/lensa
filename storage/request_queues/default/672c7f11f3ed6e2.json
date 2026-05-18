@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://lebambocheur.no",
+  "url": "https://lebambocheur.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 927957558,
+    "name": "LE BAMBOCHEUR AS",
+    "activity": "Engroshandel med drikkevarer ellers."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:24.097407+00:00"
+}

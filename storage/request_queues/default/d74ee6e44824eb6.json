@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://exsitec.no",
+  "url": "https://exsitec.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 984489234,
+    "name": "EXSITEC AS",
+    "activity": "Salg av programvare, salg av konsulenttjenester, handel og agenturer, integrasjon, samt å delta i andre selskaper i tilknytning til foranstående og hva dermed står i forbindelse, samt handel med aksjer og verdipapirer, herunder lånefinansierte investeringer med verdipapirer og valuta."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:24.677730+00:00"
+}

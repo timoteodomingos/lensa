@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://facebook.com/eonbit",
+  "url": "https://facebook.com/eonbit",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 989883070,
+    "name": "EONBIT AS",
+    "activity": "Produksjon og salg av IT-løsninger, samt virksomhet innen naturlig beslektede forretningsområder."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:22.007579+00:00"
+}

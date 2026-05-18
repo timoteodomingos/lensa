@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://snurroslo.no",
+  "url": "https://snurroslo.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 933413055,
+    "name": "SNURR AS",
+    "activity": "Salg av keramikk og kurs."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:33.197891+00:00"
+}

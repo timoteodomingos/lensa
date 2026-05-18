@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://mediaaccess.no",
+  "url": "https://mediaaccess.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 926359363,
+    "name": "MEDIA ACCESS AS",
+    "activity": "Rådgivningstjenester og konsulentvirksomhet innen digital markedsføring, salg og formidling av digital markedsføring samt delta i selskapet som faller naturlig innenfor denne bransje."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:24.364578+00:00"
+}

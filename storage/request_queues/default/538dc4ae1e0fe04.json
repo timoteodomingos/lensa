@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://elektrosolutions.no",
+  "url": "https://elektrosolutions.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 817158722,
+    "name": "ELEKTRO SOLUTIONS AS",
+    "activity": "Selskapet har til formål å drive elektrisk installasjonsarbeid og all tilhørende virksomhet knyttet til dette, samt investere og delta i andre selskaper med et hvilket som helst formål eller i fast eiendom."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:21.784757+00:00"
+}

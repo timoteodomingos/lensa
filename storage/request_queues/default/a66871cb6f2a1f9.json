@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://remis.no",
+  "url": "https://remis.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 889157682,
+    "name": "REMIS AS",
+    "activity": "Tilby konsulenttjenester, eie, utvikle og leie ut fast eiendom, foreta investeringer og handel i aksjer og verdipapirer, herunder lånefinansiering med sikkerhet i verdipapirer og valuta, samt hva hermed står i forbindelse, inkludert deltagelse eller på annen måte gjøre seg interessert i andre foretagender."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:20.295558+00:00"
+}

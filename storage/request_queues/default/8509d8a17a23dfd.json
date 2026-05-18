@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://elevateproductions.no",
+  "url": "https://elevateproductions.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 824367442,
+    "name": "ELEVATE PRODUCTIONS AS",
+    "activity": "Produksjon av film og video."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:43.073015+00:00"
+}

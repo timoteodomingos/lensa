@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://qvisten.no",
+  "url": "https://qvisten.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 880366882,
+    "name": "QVISTEN ANIMATION AS",
+    "activity": "Film og TV-produksjon, multimedia produksjon, reklameproduksjon og annen medieproduksjon som hører naturlig til."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:26.819282+00:00"
+}

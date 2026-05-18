@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://netspinner.com",
+  "url": "https://netspinner.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 5
+    },
+    "id": 976533232,
+    "name": "NETSPINNER SOLUTIONS AS",
+    "activity": "Produksjon og salg av dataprogrammer, konsulent- virksomhet knyttet til dataprogrammer, Internett og datamaskiner, samt annen virksomhet som naturlig faller inn under dette."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

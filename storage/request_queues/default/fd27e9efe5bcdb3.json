@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://carucel.no",
+  "url": "https://carucel.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 936606725,
+    "name": "CARUCEL HOLDING AS",
+    "activity": "Investeringsvirksomhet, forvaltningsvirksomhet og tjenesteyting. Dette inkluderer, men er ikke begrenset til investering i eiendom, aksjer og andre formuesgoder, samt investering i selskaper som eier eiendom, aksjer eller andre formuesgoder. Virksomheten inkluderer også alt hva som står i forbindelse med de forannevnte virksomheter."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:26.257191+00:00"
+}

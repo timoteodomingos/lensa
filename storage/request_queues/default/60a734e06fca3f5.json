@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://adcapa.no",
+  "url": "https://adcapa.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 992254394,
+    "name": "ADCAPA AS",
+    "activity": "Konsulentbistand innen regnskap og økonomi, samt investering i verdipapirer og fast eiendom."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.940480+00:00"
+}

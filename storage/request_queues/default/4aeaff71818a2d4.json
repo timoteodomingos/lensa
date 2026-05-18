@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://engelparadis.com",
+  "url": "https://engelparadis.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 927810328,
+    "name": "ENGEL PARADIS AS",
+    "activity": "Arrangere og utføre forskjellige type arrangementer i Norge."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:22.711258+00:00"
+}

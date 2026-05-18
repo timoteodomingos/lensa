@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://ingbo.no",
+  "url": "https://ingbo.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 996535118,
+    "name": "INGENIØRFIRMA KNUT J. BØ AS",
+    "activity": "Handel og agenturvirksomhet, samt alt som står i forbindelse hermed, herunder å delta i andre selskap og foretagender med lignende formål."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:28.696066+00:00"
+}

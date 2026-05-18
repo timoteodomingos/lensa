@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://eficode.com",
+  "url": "https://eficode.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 914758440,
+    "name": "EFICODE AS",
+    "activity": "Konsultasjon, opplæring og andre tjenester innen programvare (IT)"
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:33.557973+00:00"
+}

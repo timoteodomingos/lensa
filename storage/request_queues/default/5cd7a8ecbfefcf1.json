@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://askeladdencapital.com",
+  "url": "https://askeladdencapital.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 922431043,
+    "name": "ASKELADDEN CAPITAL AS",
+    "activity": "Investering i andre selskaper gjennom aksjer, andeler eller på annen måte, samt hva derved står i sammenheng."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:22.815423+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://workmannorway.no",
+  "url": "https://workmannorway.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 927237997,
+    "name": "WORKMAN NORWAY HOLDING AS",
+    "activity": "Eie og forvalte aksjer og andre finansielle investeringer for selskapets aksjonærer, samt det som naturlig står i forbindelse med dette."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.868899+00:00"
+}

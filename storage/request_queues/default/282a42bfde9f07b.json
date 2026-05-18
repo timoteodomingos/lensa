@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://io.no",
+  "url": "https://io.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 6
+    },
+    "id": 929071905,
+    "name": "CUTTING EDGE BARBERSHOP AS",
+    "activity": "Frisør."
+  },
+  "retry_count": 1,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.876288+00:00"
+}

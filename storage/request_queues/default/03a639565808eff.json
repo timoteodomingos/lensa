@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://det-gylne-snitt.no",
+  "url": "https://det-gylne-snitt.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 914058937,
+    "name": "DET GYLNE SNITT AS",
+    "activity": "Drive salg av billedkunst og plakater, innramming av kunst og annet som naturlig måtte følge av slik virksomhet."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:28.577154+00:00"
+}

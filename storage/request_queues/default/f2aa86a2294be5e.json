@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://sement.heidelbergmaterials.no",
+  "url": "https://sement.heidelbergmaterials.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 934949145,
+    "name": "HEIDELBERG MATERIALS SEMENT NORGE AS",
+    "activity": "Drive fabrikasjon av sement, annen industri, transport, handel og hva dermed står i forbindelse, samt å delta som aksjonær eller på annen måte ved investering i andre foretagender.  "
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:25.687874+00:00"
+}

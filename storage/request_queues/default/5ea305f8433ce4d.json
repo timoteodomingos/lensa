@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://inivagruppen.no",
+  "url": "https://inivagruppen.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 932435853,
+    "name": "INIVA HOLDING AS",
+    "activity": "Å eie aksjer og investere i andre selskaper, samt det som står i naturlig forbindelse med dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:35.829613+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://bislab.io",
+  "url": "https://bislab.io",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 932817144,
+    "name": "BISLAB INTELLIGENCE AS",
+    "activity": "Selge varer og tjenester innen programmering og annet som naturlig sammenfaller med dette, samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:20.682327+00:00"
+}

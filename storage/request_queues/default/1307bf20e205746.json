@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://apenhet.com",
+  "url": "https://apenhet.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 916202342,
+    "name": "ÅPENHET AS",
+    "activity": "Forskningsarbeid, kunnskapsformidling og rådgivende virksomhet. Selskapet har ikke erverv som formål."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:31.134866+00:00"
+}

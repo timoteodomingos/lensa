@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://cognicare.no",
+  "url": "https://cognicare.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 934089995,
+    "name": "COGNICARE AS",
+    "activity": "Kjøp og salg av produkter til organisasjoner innen helsesektoren, samt annet som naturlig faller sammen med dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:26.039770+00:00"
+}

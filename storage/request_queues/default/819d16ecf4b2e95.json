@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://soyastudios.com",
+  "url": "https://soyastudios.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 936491529,
+    "name": "SOYA STUDIOS AS",
+    "activity": "Selge varer og tjenester innen kunst - og annet som naturlig sammenfaller med dette - samt deltakelse i andre selskaper, investeringer og nærliggende virksomhet."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:29.432584+00:00"
+}

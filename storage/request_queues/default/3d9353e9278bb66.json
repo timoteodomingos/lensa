@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://barbardot.no",
+  "url": "https://barbardot.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 918143866,
+    "name": "BAR BARDOT AS",
+    "activity": "Drift av restauranter og medvirke i andre selskaper innen samme virksomhet, samt alt som hører naturlig til dette."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:29.862700+00:00"
+}

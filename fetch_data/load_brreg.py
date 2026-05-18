@@ -9,6 +9,8 @@ con.sql(
         organisasjonsnummer as id,
         navn as name,
         "organisasjonsform.beskrivelse" as description,
+        "organisasjonsform.kode" as org_type,
+        vedtektsfestetFormaal as activity,
         "naeringskode1.kode" as industry_code,
         "naeringskode1.beskrivelse" as industry_description,
         harRegistrertAntallAnsatte as has_registered_employee_count,

@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://liwlig.com",
+  "url": "https://liwlig.com",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 979128622,
+    "name": "LIWLIG NORWAY AS",
+    "activity": "Produksjon av alle typer arrangement og informasjonsmateriell, samt rådgivning innen bedriftsutvikling, kommunikasjon, informasjon og alt som står i forbindelse med dette, herunder deltakelse i andre selskaper."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:23.885131+00:00"
+}

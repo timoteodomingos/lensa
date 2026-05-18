@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://nordicresidentialproperties.no",
+  "url": "https://nordicresidentialproperties.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 933526232,
+    "name": "NORDIC RESIDENTIAL PROPERTIES MATHILDETUNET AS",
+    "activity": "Å investere i fast eiendom eller selskaper som eier fast eiendom, og alt som dermed står i forbindelse."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:30.735659+00:00"
+}

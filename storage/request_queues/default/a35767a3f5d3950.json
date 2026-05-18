@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://vid.no",
+  "url": "https://vid.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 915635520,
+    "name": "VID VITENSKAPELIGE HØGSKOLE AS",
+    "activity": "Ideelt aksjeselskap uten erverv til formål. Selskapet skal ikke dele ut utbytte til aksjeeierne. VID vitenskapelige høgskole AS har som formål å tilby høyere utdanning, drive forskning, utvikling og nyskapning, og formidle kunnskap på høy internasjonalt nivå innenfor helse- og sosialfag, pedagogikk, ledelse, diakoni og teknologi. Høgskolen skal fremme et kristent menneskesyn og diakonale verdier, drive helse og samfunnsfaglig, teologisk, diakoni- og misjonsfaglig forskning og utdanning, utdanne profesjonsutøvere og ledere til tjeneste i helse- og sosialsektoren, utdanningssektoren og kirken, utdanne til diakontjeneste og prestetjeneste i Den norske kirke, Metodistkirken og andre kirker høgskolen har avtale med, nasjonalt og globalt, og samarbeide med kirke og samfunn om utdanning, forskning og utvikling, særlig i de regionene hvor virksomheten er lokalisert. Virksomheten kan drives av selskapet selv, gjennom datterselskaper eller i samarbeid med andre offentlige eller private selskaper og institusjoner."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:31.649932+00:00"
+}

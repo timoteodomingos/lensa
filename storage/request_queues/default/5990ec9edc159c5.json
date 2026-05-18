@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://apotek1.no",
+  "url": "https://apotek1.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 932989131,
+    "name": "APOTEK 1 ST. HANSHAUGEN SENTER AS",
+    "activity": "Eie og drive apotek og alt hva hermed står i forbindelse."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:33.344855+00:00"
+}

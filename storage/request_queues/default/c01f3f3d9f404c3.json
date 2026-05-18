@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://yellowlog.no",
+  "url": "https://yellowlog.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 918717277,
+    "name": "YELLOW LOG AS",
+    "activity": "Drive med filmproduksjon og media, og annet som naturlig hører sammen med dette, samt investering i andre selskap."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:40.802130+00:00"
+}

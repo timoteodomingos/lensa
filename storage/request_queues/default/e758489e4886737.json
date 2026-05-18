@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://osberget.no",
+  "url": "https://osberget.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 990815488,
+    "name": "FANTASTISKE OSBERGET AS",
+    "activity": "Tilby design og grafiske tjenester samt produksjon og salg av nært beslektede produkter, forlagsvirksomhet, utgivelse av bøker og nært beslektede produkter, inneha eierandeler i andre virksomheter, samt investeringer i aksjer og verdipapirer."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:22.851368+00:00"
+}

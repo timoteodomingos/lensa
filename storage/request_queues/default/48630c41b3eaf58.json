@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://tu.no",
+  "url": "https://tu.no",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    },
+    "id": 919646683,
+    "name": "TEKNISK UKEBLAD MEDIA AS",
+    "activity": "Teknisk Ukeblad Media skal ivareta behovet for polytekniske nyheter, hendelser og forhold. Selskapet driver media- og kommunikasjonsvirksomhet med hovedfokus på teknologi, næringsliv og samfunn - og skal eie og utvikle medieposisjoner, samt liknende og tilhørende virksomheter. Selskapet skal respektere det enkelte mediums ståsted og tradisjon, garantere den redaksjonelle frihet og selvstendighet - og drive sitt publisistiske virke i henhold til selskapets utgivererklæring."
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-18 17:10:37.051950+00:00"
+}
