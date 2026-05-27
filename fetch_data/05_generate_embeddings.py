@@ -31,7 +31,7 @@ def load_batch(con: DuckDBPyConnection) -> list:
             AND detailed_summary IS NOT NULL
             AND id NOT IN (SELECT id FROM company_embeddings)
             ORDER BY random()
-            LIMIT 20
+            LIMIT 300
         """)
         .df()
         .to_dict(orient="records")

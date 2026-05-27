@@ -49,14 +49,17 @@ def load_batch(con: DuckDBPyConnection) -> list:
 
 async def process_record(agent: Agent, record: dict) -> dict | None:
     try:
-        summary = await generate_summary(
-            agent=agent,
-            company_name=record["name"],
-            company_activity=record["activity"],
-            home_content=record["home_content"],
-            about_content=record["about_content"]
-            if isinstance(record["about_content"], str)
-            else None,
+        summary = await asyncio.wait_for(
+            generate_summary(
+                agent=agent,
+                company_name=record["name"],
+                company_activity=record["activity"],
+                home_content=record["home_content"],
+                about_content=record["about_content"]
+                if isinstance(record["about_content"], str)
+                else None,
+            ),
+            timeout=30.0,
         )
         return {
             "id": record["id"],
@@ -64,6 +67,9 @@ async def process_record(agent: Agent, record: dict) -> dict | None:
             "short_summary": summary.short_summary,
             "detailed_summary": summary.detailed_summary,
         }
+    except asyncio.TimeoutError:
+        print(f"timeout for {record['id']}, skipping")
+        return None
     except Exception as e:
         print(f"failed for {record['id']}: {e}")
         return None
@@ -92,6 +98,8 @@ async def generate_summary(
 
     So if the page contains only noise or seems completely unrelated to the registered activity, flag it. Only flag completely unrelated, somewhat related can still be correct.
     If flagged as unrelated, set short_summary and detailed_summary to null.
+
+    Always write your summaries in English
 
     COMPANY DETAILS:
     Company name: {company_name}
