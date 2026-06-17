@@ -1,0 +1,43 @@
+.hc {
+    padding: 14px 16px;
+}
+.hc-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0d1117;
+    margin-bottom: 4px;
+}
+.hc-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.hc-summary {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #3d4752;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.hc-financials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.hc-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #0d9488;
+    text-decoration: none;
+}
+.hc-link:hover {
+    text-decoration: underline;
+}

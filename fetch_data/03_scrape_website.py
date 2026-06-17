@@ -43,6 +43,7 @@ def load_batch(con: DuckDBPyConnection) -> list:
         SELECT b.name, w.id, w.url, b.activity FROM websites w
         JOIN brreg_data b ON w.id = b.id
         WHERE w.url IS NOT NULL
+        AND w.url != ''
         AND w.confidence = 'high'
         AND w.id NOT IN (SELECT id FROM do_not_retry)
         ORDER BY random()

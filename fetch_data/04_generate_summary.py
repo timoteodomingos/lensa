@@ -97,7 +97,7 @@ async def generate_summary(
     Below here you'll find the companies' name and registered activity, which you can use to decide if you want to flag the content as unrelated.
 
     So if the page contains only noise or seems completely unrelated to the registered activity, flag it. Only flag completely unrelated, somewhat related can still be correct.
-    If flagged as unrelated, set short_summary and detailed_summary to null.
+    If flagged as unrelated, set short_summary and detailed_summary to null. (Also do this if the page contains no content at all, or the website is offline).
 
     Always write your summaries in English
 

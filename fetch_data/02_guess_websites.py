@@ -1,20 +1,26 @@
 import asyncio
 import json
+import os
 from typing import Literal, Optional
 
 import duckdb
-import ollama
-import pandas
 from ddgs import DDGS
+from dotenv import load_dotenv
 from duckdb import DuckDBPyConnection
-from ollama import AsyncClient
 from pydantic import BaseModel
+from pydantic_ai import Agent
+from pydantic_ai.models.openrouter import OpenRouterModel
+from pydantic_ai.providers.openrouter import OpenRouterProvider
 
 
 class CompanySite(BaseModel):
     site_found: bool
     confidence: Optional[Literal["low", "medium", "high"]] = None
     url: Optional[str] = None
+
+
+load_dotenv()
+OPEN_ROUTER_KEY = os.getenv("OPEN_ROUTER_KEY")
 
 
 def setup_db(con: DuckDBPyConnection) -> None:
@@ -81,16 +87,13 @@ def load_batch(con: DuckDBPyConnection) -> list:
 
 
 async def find_company_website(
-    name: str, address: str, city: str, activity: str, ollama_client: AsyncClient
+    name: str, address: str, city: str, activity: str, agent: Agent
 ) -> tuple:
     search_results = await asyncio.to_thread(search_company_info, name, address, city)
     if not search_results:
         return ()
 
-    print(search_results)
-    website = await guess_website(
-        ollama_client, search_results, name, address, city, activity
-    )
+    website = await guess_website(agent, search_results, name, address, city, activity)
     if not website:
         return ()
 
@@ -105,14 +108,14 @@ def search_company_info(company_name: str, address: str, city: str) -> list:
             for r in ddgs.text(
                 search_query,
                 max_results=None,
-                backend="brave,yahoo, yandex",
+                backend="brave,yandex",
             )[:20]
         ]
         return results or []
 
 
 async def guess_website(
-    ollama_client: AsyncClient,
+    agent: Agent,
     search_results: str,
     name: str,
     address: str,
@@ -120,17 +123,8 @@ async def guess_website(
     activity: str,
 ) -> dict:
     prompt = generate_prompt(name, address, activity, search_results)
-
-    response = await ollama_client.chat(
-        model="gemma4:26b",
-        messages=[{"role": "user", "content": prompt}],
-        think=False,
-        stream=False,
-        format=CompanySite.model_json_schema(),
-        options={"temperature": 0},
-    )
-    if response:
-        return json.loads(response.message.content)
+    response = await agent.run(prompt)
+    return response.output.model_dump()
 
 
 def generate_prompt(name: str, address: str, activity: str, search_results: str) -> str:
@@ -205,15 +199,18 @@ def insert_success(con: DuckDBPyConnection, success: list) -> None:
 
 
 async def main():
-    ollama_client = AsyncClient()
+    model = OpenRouterModel(
+        "google/gemma-4-26b-a4b-it",
+        provider=OpenRouterProvider(api_key=OPEN_ROUTER_KEY),
+    )
+    agent = Agent(model, output_type=CompanySite)
 
     con = duckdb.connect("db/lensa.db")
-
     setup_db(con)
 
     while True:
         batch = load_batch(con)
-
+        print(batch)
         if not batch:
             print("finished all")
             break
@@ -229,10 +226,11 @@ async def main():
                     company["address"],
                     company["city"],
                     company["activity"],
-                    ollama_client,
+                    agent,
                 )
             )
             tasks.append(task)
+            # I'm sleeping one second here to stay below rate limits
             await asyncio.sleep(1.1)
 
         results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -242,7 +240,6 @@ async def main():
             for id, result in results_list
             if result is None or isinstance(result, Exception)
         ]
-        # in our script result is a dict i think but lets check
         success = [
             (id, result)
             for id, result in results_list

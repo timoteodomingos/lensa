@@ -64,32 +64,23 @@ def insert_embeddings(con: DuckDBPyConnection, rows: list) -> None:
     )
 
 
-def main():
-    con = duckdb.connect("db/lensa.db")
-    setup_db(con)
+con = duckdb.connect("db/lensa.db")
+setup_db(con)
+
+while True:
+    batch = load_batch(con)
+    if not batch:
+        print("done")
+        break
+
+    texts = [f"{r['short_summary']} {r['detailed_summary']}" for r in batch]
 
     try:
-        while True:
-            batch = load_batch(con)
-            if not batch:
-                print("done")
-                break
+        embeddings = generate_embeddings(texts)
+    except Exception as e:
+        print(f"embedding request failed: {e}")
+        continue
 
-            texts = [f"{r['short_summary']} {r['detailed_summary']}" for r in batch]
-
-            try:
-                embeddings = generate_embeddings(texts)
-            except Exception as e:
-                print(f"embedding request failed: {e}")
-                continue
-
-            rows = [(r["id"], emb) for r, emb in zip(batch, embeddings)]
-            insert_embeddings(con, rows)
-            print(f"inserted {len(rows)} embeddings")
-
-    except KeyboardInterrupt:
-        print("shutting down...")
-
-
-if __name__ == "__main__":
-    main()
+    rows = [(r["id"], emb) for r, emb in zip(batch, embeddings)]
+    insert_embeddings(con, rows)
+    print(f"inserted {len(rows)} embeddings")
