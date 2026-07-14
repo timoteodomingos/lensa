@@ -142,8 +142,7 @@ One more mode I added: you can color nodes by company revenue instead of by clus
 
 ![gif2](images/mapgif2.gif)
 
-Stepping back, I think there's something wildly under-explored about semantic maps. We've gotten very good at using embeddings to fetch the right answer — search, recommendations, RAG — but much less interested in using them to _show_ the whole landscape at once. And seeing the whole landscape is often where the interesting questions start.
-
+Stepping back, I think there's something wildly under-explored about semantic maps. We've gotten very good at using embeddings to fetch the right answer — search, recommendations, RAG — but much less interested in using them to _show_ the whole landscape at once.
 
 # Tech stack motivations 
 
