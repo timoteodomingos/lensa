@@ -1,4 +1,4 @@
-View the map: (link)
+[View the map](https://timoteodomingos.github.io/lensa/)
 
 ### PIPELINE 
 
