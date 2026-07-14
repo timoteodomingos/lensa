@@ -17,7 +17,7 @@ I wanted to start off this README by explaining how I came across the brreg data
 
 See, when you have a nice hammer, everything looks like a nail. I've been enjoying applying vector embeddings to things for a while already, and in the Brreg dataset I found a good nail - Norway publishes nearly every company in the country as open data — something most countries either lock away or charge a small fortune for.
 
-If you're unfamiliar with vector embeddings and how to compare similarity between vectors, I've written an easy-to-digest explainer — one I hope anyone can follow regardless of technical background.
+If you're unfamiliar with vector embeddings and how to compare similarity between vectors, [I've written an easy-to-digest explainer](https://github.com/timoteodomingos/lensa/blob/main/vector_embeddings_explainer.md) — one I hope anyone can follow regardless of technical background.
 
 ## The idea
 
