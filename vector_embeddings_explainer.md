@@ -9,7 +9,7 @@ Vector embeddings are basically a way to represent "things" as a series of numbe
 |Golden Retriever|+0.9|+0.1|
 |Dolphin|+0.7|+0.8|
 |Snail|+0.5|-0.8|
-|Hornet|-0.5|+0.5|
+|Hornet|-0.5|+0.7|
 |Shark|-0.8|+0.6|
 |Crocodile|-0.9|-0.4|
 
@@ -18,9 +18,7 @@ Here we have a simple table where we only care about two dimensions. So how do w
 ![animals2](images/animals2.png)
 The smaller the angle between two points, the more similar they are. And the angle is easy to compute from a list of numbers — 
 
-*you just take the (normalized) dot product between vectors (points), which gives you the cosine of the angle (a number between -1 and 1).*
-
-*A large cosine means a small angle; a small cosine means a large angle. So whichever comparison gives the largest number is the most similar.*
+*You just take the (normalized) dot product between vectors (points), which gives you the cosine of the angle (a number between -1 and 1).A large cosine means a small angle; a small cosine means a large angle. So whichever comparison gives the largest number is the most similar.*
 
 The larger the angle, the less similar the points are.
 
@@ -41,7 +39,7 @@ In this case, that's the Hornet. Which — when you picture a shark, "hornet" is
 | Golden Retriever | +0.9       | +0.1      | +0.9       | +0.4        |
 | Dolphin          | +0.7       | +0.8      | −0.9       | +0.6        |
 | Snail            | +0.5       | −0.8      | +0.6       | −0.9        |
-| Hornet           | −0.5       | +0.5      | +0.7       | −0.9        |
+| Hornet           | −0.5       | +0.7      | +0.7       | −0.9        |
 | Shark            | −0.8       | +0.6      | −0.9       | +0.8        |
 | Crocodile        | −0.9       | −0.4      | +0.2       | +0.7        |
 
@@ -59,7 +57,7 @@ animals = {
     "Golden Retriever": [0.9, 0.1, 0.9, 0.4],
     "Dolphin":          [0.7, 0.8, -0.9, 0.6],
     "Snail":            [0.5, -0.8, 0.6, -0.9],
-    "Hornet":           [-0.5, 0.5, 0.7, -0.9],
+    "Hornet":           [-0.5, 0.7, 0.7, -0.9],
     "Shark":            [-0.8, 0.6, -0.9, 0.8],
     "Crocodile":        [-0.9, -0.4, 0.2, 0.7],
 }
@@ -85,7 +83,7 @@ Output:
 Closest to Shark: Dolphin (0.510)
 ```
 
-*why angles instead of Euclidean distance? In high-dimensional spaces, distances stop being meaningful; everything ends up roughly the same distance from everything else. Angles don't have this problem. In fact, the more dimensions you add, the harder it becomes for two vectors to point in the same direction by sheer accident — so a small angle becomes an even stronger signal of genuine similarity.
+* Why angles instead of Euclidean distance? In high-dimensional spaces, distances stop being meaningful; everything ends up roughly the same distance from everything else. Angles don't have this problem. In fact, the more dimensions you add, the harder it becomes for two vectors to point in the same direction by sheer accident — so a small angle becomes an even stronger signal of genuine similarity.
 
 So you can imagine: if we kept adding animals and some reasonable traits to separate them by, we could eventually map out the entire animal kingdom and compare any two animals in terms of "overall" similarity.
 
