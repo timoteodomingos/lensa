@@ -48,7 +48,9 @@ label_columns = sorted(c for c in df.columns if c.startswith("label_layer_"))
 topic_name_vectors = [df[c].values for c in label_columns]
 
 hover_template = Path("app/templates/hover_card.html").read_text()
-custom_css = Path("app/templates/hover_card.css").read_text()
+custom_css = Path("app/templates/hover_card.css").read_text() + """
+#deck-container, .deck-canvas { background: #e8e8e8 !important; }
+"""
 tooltip_css = Path("app/templates/tooltip.css").read_text()
 
 revenue_log = np.log1p(df["revenue"].fillna(0).clip(lower=0).values)
@@ -87,8 +89,8 @@ marker_color_array = make_position_palette(
 plot = datamapplot.create_interactive_plot(
     coords,
     *topic_name_vectors,
-    title="Norwegian Companies",
-    sub_title="A semantic map of Norwegian companies",
+    title="Companies in Oslo (AS)",
+    sub_title="Similar companies cluster together",
     hover_text=df["short_summary"].fillna("").tolist(),
     hover_text_html_template=hover_template,
     extra_point_data=extra_data,
@@ -104,7 +106,7 @@ plot = datamapplot.create_interactive_plot(
             "kind": "continuous",
             "cmap": "Greens",
         }
-    ],
+    ]
 )
 
 plot.save("norwegian_companies_map.html")

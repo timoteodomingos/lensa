@@ -1,3 +1,17 @@
+View the map: (link)
+
+### PIPELINE 
+
+1. `01_load_brreg.py` — Load all companies from the Brreg dataset into DuckDB
+2. `02_guess_website.py` — Search each company via DDGS, feed the top 20 results to an LLM, and return the most likely website with a confidence score
+3. `03_scrape_website.py` — Scrape the homepage and about page if present
+4. `04_generate_summary.py` — Generate a company summary from the scraped content and filter out false positives
+5. `05_generate_embeddings.py` — Generate vector embeddings from the summaries
+6. `06_reduce_dimensions.py` — Reduce embeddings to x,y coordinates using UMAP
+7. `07_find_clusters.py` — Assign clusters and generate cluster labels
+8. `08_get_financial_data.py` — Fetch financial data for each company from the Brreg API
+
+---
 
 I wanted to start off this README by explaining how I came across the brreg dataset (Norwegian chamber of commerce) and thought, *'wouldn't it be really cool if we could create a map where similar companies end up close to each other?'* - and how I then found out vector embeddings were the right tool for the job... But I would be lying: it happend exactly the other way around. 
 
@@ -5,7 +19,7 @@ See, when you have a nice hammer, everything looks like a nail. I've been enjoyi
 
 If you're unfamiliar with vector embeddings and how to compare similarity between vectors, I've written an easy-to-digest explainer — one I hope anyone can follow regardless of technical background.
 
-# The idea
+## The idea
 
 The idea is to get a summary of every company's activity in Oslo, so we can create a vector embedding for each one. This alone lets us compare companies by similarity — you could ask which 10 companies are most similar to company X, or query something like "dog-friendly gluten-free bakery" and instantly get the most relevant matches.
 
@@ -17,7 +31,7 @@ I'm not sure how useful it would actually be, but I can imagine a few use cases 
 
 But before we break our brains over how to get 4096-dimensional embeddings onto a 2D map, let's first focus on getting these embeddings. Worst case, we end up with a solid query engine instead of a map.
 
-# Getting summaries 
+## Getting summaries 
 
 The Brreg datafile I mentioned earlier actually contains exactly this — a short description of each company's activity. But a quick example gives us a reality check:
 
@@ -32,7 +46,7 @@ Not the worst summary you could imagine, but it's missing a lot — no mention o
 So how do we get a proper summary for every company in Oslo? Maybe grab each company's website and get content from there? But out of our ~81,765 AS companies in Oslo, only around 7,000 have a website listed — and when I checked a few companies I know personally, none of them showed up. So most companies with a website just don't have it registered with Brreg.
 
 
-### Farming our data 
+## Farming our data 
 
 There's a search API called `ddgs` — since regular search APIs are usually pretty pricey (~$400 for 80k searches), this one is a great alternative. It's a Python library that tries different search engines (Yahoo, Yandex, Brave, etc.) and returns results, like a Google search API, but free.
 
@@ -41,7 +55,7 @@ Since common wisdom says you should always try the naive approach first, I figur
 This was a terrible idea. After running it on a sample, the embeddings came back nowhere close to actually similar companies. For most companies, most search results are just noise. And with second-tier search engines, We get Russian results, Chinese results all mixed in. Embedding models are pretty good at separating signal from noise, but this was pushing it way too far. There is also no way to tell which companies have clean data and which had garbage.
 
 
-### The power of LLMs in data farming 
+## The power of LLMs in data farming 
 
 The best source of information about a company is its own website. To find the website, we could search each company, compare its name against the top 20 domains, do some keyword matching, and so on. But that's a lot of manual work and very error-prone.
 
@@ -63,7 +77,7 @@ To check the quality, I ran this on companies where we _already_ knew the correc
 
 Of course there's always some risk of false positives, and that means some bad data. But we're not building a fault-tolerant, high-stakes system — just something good enough to compare most companies reasonably. And there are a couple of cleanup steps later that make false positives even less likely.
 
-# Generating summaries 
+## Generating summaries 
 
 Out of the 81,765 AS companies registered in Oslo, our approach found ~17,000 websites with high confidence. Considering most AS companies are holdings, subsidiaries, etc., and every company I personally know shows up in the results, I'd say this is a pretty good result. 
 
@@ -85,10 +99,13 @@ We also tell it to flag the result if the content doesn't match the activity fro
 
 So now we have ~17,000 websites and company summaries in our database. Now we can generate a vector embedding (4096 dimensions, Qwen3-Embedding-8B) for each detailed summary, store it, and start comparing angles.
 
-When I queried the 10 most similar companies to the specialty coffee shop around the corner, the results were exactly what I was hoping for. Most companies gave great results — the main exception being larger chains whose head office is outside Oslo, which is fair enough.
+When I queried 'speciality coffee', the results were exactly what I was hoping for. Most queries I tried gave great results — the main exception being larger chains whose head office is outside Oslo, which is fair enough.
+
+![query](images/query.png)
+
 
 **include coffeeshop example** 
-# Visualize on a map 
+## Visualize on a map 
 
 So now we have ~17,000 vectors in... 4096 dimensions. How do we visualize this on a 2D map?
 
@@ -116,16 +133,14 @@ I was genuinely surprised by how well the embeddings held up in 2D. What's cool 
 
 
 
-**Show example gif of the map**
+![gif1](images/mapgif.gif)
 
-The clustering library (toponymy) also generates a label for each cluster, which renders directly on the map. Under the hood it uses a mix of keyphrase extraction and LLM calls, which is clever, but the keyphrase extraction part is also why you end up with labels like "Strategic Management Consulting and Operational Execution Advisory Services" or "Bespoke Luxury Interior Architecture and High-End Custom Design for Premium Residential and Hospitality Markets." Technically accurate, but absurdly bloated.
-
-Rather than build my own clustering pipeline from scratch, it was much easier to just dump these labels into an LLM and have it spit out a simple SQL statement to clean them up. That turned the example above into something like "Management Consulting" and "Luxury Interior Design" — far cleaner, and actually fits on the map.
+The clustering library generates a label for each cluster, which renders directly on the map. The labels were far from ideal though, since most labels looked something like "Strategic Management Consulting and Operational Execution Advisory Services", very bloated. So I just pasted the list in to Claude and asked it to trim the labels down a bit.
 
 One more mode I added: you can color nodes by company revenue instead of by cluster. Flip that on, and the big players instantly light up — you can see at a glance which companies dominate a given space, without having to hover over every dot to check.
 
 
-**Show example gif of the map**
+![gif2](images/mapgif2.gif)
 
 Stepping back, I think there's something wildly under-explored about semantic maps. We've gotten very good at using embeddings to fetch the right answer — search, recommendations, RAG — but much less interested in using them to _show_ the whole landscape at once. And seeing the whole landscape is often where the interesting questions start.
 
@@ -137,11 +152,4 @@ Stepping back, I think there's something wildly under-explored about semantic ma
 - **Pydantic AI**: Great for working with structured LLM responses — define your data models in a couple lines of code and the rest is handled for you.
 - **Crawlee**: Handles the scraping — crawling company websites and extracting clean text content.
 - **UMAP, Toponymy, Datamapplot**: Used for dimensionality reduction, clustering and plotting the final map.
-- **HTML, CSS**: Some custom HTML and CSS were used for styling the final map. 
-
-
-
-`Strategic Management Consulting and Operational Execution Advisory Services` and `Bespoke Luxury Interior Architecture and High-End Custom Design for Premium Residential and Hospitality Markets`
-
-
-`Nordic multidisciplinary digital transformation consultancy specializing in technology and strategy`
+- **HTML, CSS**: Some custom HTML and CSS were used for styling the final map.

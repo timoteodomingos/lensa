@@ -41,7 +41,7 @@ top = con.execute(
     JOIN brreg_data b ON e.id = b.id
     JOIN company_summaries cs ON e.id = cs.id
     ORDER BY distance ASC
-    LIMIT 30
+    LIMIT 15
 """,
     [embedding],
 ).df()
