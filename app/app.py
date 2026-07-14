@@ -109,5 +109,3 @@ plot = datamapplot.create_interactive_plot(
 
 plot.save("norwegian_companies_map.html")
 print("Saved norwegian_companies_map.html")
-
-con.close()
