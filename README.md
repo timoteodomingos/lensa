@@ -104,7 +104,6 @@ When I queried 'speciality coffee', the results were exactly what I was hoping f
 ![query](images/query.png)
 
 
-**include coffeeshop example** 
 ## Visualize on a map 
 
 So now we have ~17,000 vectors in... 4096 dimensions. How do we visualize this on a 2D map?
