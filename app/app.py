@@ -52,6 +52,7 @@ custom_css = "\n".join([
     Path("app/templates/hover_card.css").read_text(),
     Path("app/templates/mobile.css").read_text(),
 ])
+custom_js = Path("app/templates/mobile.js").read_text()
 tooltip_css = Path("app/templates/tooltip.css").read_text()
 
 revenue_log = np.log1p(df["revenue"].fillna(0).clip(lower=0).values)
@@ -98,6 +99,7 @@ plot = datamapplot.create_interactive_plot(
     enable_search=True,
     tooltip_css=tooltip_css,
     custom_css=custom_css,
+    custom_js=custom_js,
     marker_color_array=marker_color_array,
     colormap_rawdata=[revenue_log],
     colormap_metadata=[
