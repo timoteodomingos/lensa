@@ -32,7 +32,7 @@ The larger the angle, the less similar the points are.
 
 So if we wanted to find which animal is most similar to a Shark, we'd take the angle between Shark and every other animal, and call the one with the smallest angle the winner.
 
-In this case, that's the Hornet. Which — when you picture a shark, "hornet" is probably not the first thing that comes to mind as similar. I think the Dolphin would probably be most similar to Shark overall. This is of course due to the fact we only care about how cute or fast the animals are. What if we added two more categories?
+In this case, that's the Hornet. Which — when you picture a Shark, "Hornet" is probably not the first thing that comes to mind as similar. I think the Dolphin would probably be most similar to Shark overall. This is of course due to the fact we only care about how cute or fast the animals are. What if we added two more categories?
 
 | Animal           | Cute/Scary | Fast/Slow | Land/Water | Large/Small |
 | ---------------- | ---------- | --------- | ---------- | ----------- |
