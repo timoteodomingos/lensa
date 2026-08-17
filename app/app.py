@@ -107,5 +107,11 @@ plot = datamapplot.create_interactive_plot(
     ]
 )
 
-plot.save("norwegian_companies_map.html")
+VIEWPORT_TAG = '<meta name="viewport" content="width=device-width, initial-scale=1">'
+
+html = str(plot)
+if 'name="viewport"' not in html:
+    html = html.replace("<head>", f"<head>\n{VIEWPORT_TAG}", 1)
+
+Path("norwegian_companies_map.html").write_text(html, encoding="utf-8")
 print("Saved norwegian_companies_map.html")

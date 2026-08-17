@@ -1,4 +1,4 @@
-# Vector embeddings
+# Vector Embeddings
 
 Vector embeddings are basically a way to represent "things" as a series of numbers.
 
@@ -24,7 +24,7 @@ The larger the angle, the less similar the points are.
 
 ![animals3](images/animals3.png)
 
-*Note that the angle doesn't care about the length of the arrows, only their direction**
+*Note that the angle doesn't care about the length of the arrows, only their direction*
 
 ![animals4](images/animals4.png)
 
@@ -32,7 +32,7 @@ The larger the angle, the less similar the points are.
 
 So if we wanted to find which animal is most similar to a Shark, we'd take the angle between Shark and every other animal, and call the one with the smallest angle the winner.
 
-In this case, that's the Hornet. Which — when you picture a shark, "hornet" is probably not the first thing that comes to mind as similar. I think the dolphin would probably be most similar to shark overall. This is of course due to the fact we only care about how cute or fast the animals are. What if we added two more categories?
+In this case, that's the Hornet. Which — when you picture a shark, "hornet" is probably not the first thing that comes to mind as similar. I think the Dolphin would probably be most similar to Shark overall. This is of course due to the fact we only care about how cute or fast the animals are. What if we added two more categories?
 
 | Animal           | Cute/Scary | Fast/Slow | Land/Water | Large/Small |
 | ---------------- | ---------- | --------- | ---------- | ----------- |
@@ -83,11 +83,11 @@ Output:
 Closest to Shark: Dolphin (0.510)
 ```
 
-* Why angles instead of Euclidean distance? In high-dimensional spaces, distances stop being meaningful; everything ends up roughly the same distance from everything else. Angles don't have this problem. In fact, the more dimensions you add, the harder it becomes for two vectors to point in the same direction by sheer accident — so a small angle becomes an even stronger signal of genuine similarity.
+*Why angles instead of Euclidean distance? In high-dimensional spaces, distances stop being meaningful; everything ends up roughly the same distance from everything else. Angles don't have this problem. In fact, the more dimensions you add, the harder it becomes for two vectors to point in the same direction by sheer accident — so a small angle becomes an even stronger signal of genuine similarity.
 
 So you can imagine: if we kept adding animals and some reasonable traits to separate them by, we could eventually map out the entire animal kingdom and compare any two animals in terms of "overall" similarity.
 
-# Comparing companies
+# Comparing Companies
 
 Great — so to compare the similarity of companies, all we need to do is the same thing, but for our list of companies, right? Just pick the best categories to separate them by, score each company on each category, and start comparing angles?
 
