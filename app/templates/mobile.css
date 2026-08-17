@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  #main-title {
+    font-size: 22pt !important;
+  }
+  #title-container span:not(#main-title) {
+    font-size: 11pt !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-left {
+    display: flex !important;
+  }
+}

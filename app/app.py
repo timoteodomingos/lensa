@@ -48,7 +48,10 @@ label_columns = sorted(c for c in df.columns if c.startswith("label_layer_"))
 topic_name_vectors = [df[c].values for c in label_columns]
 
 hover_template = Path("app/templates/hover_card.html").read_text()
-custom_css = Path("app/templates/hover_card.css").read_text()
+custom_css = "\n".join([
+    Path("app/templates/hover_card.css").read_text(),
+    Path("app/templates/mobile.css").read_text(),
+])
 tooltip_css = Path("app/templates/tooltip.css").read_text()
 
 revenue_log = np.log1p(df["revenue"].fillna(0).clip(lower=0).values)
