@@ -87,8 +87,8 @@ marker_color_array = make_position_palette(
 plot = datamapplot.create_interactive_plot(
     coords,
     *topic_name_vectors,
-    title="Companies in Oslo (AS)",
-    sub_title="Similar companies cluster together",
+    title="Companies in Oslo",
+    sub_title="Similar companies (AS) cluster together",
     hover_text=df["short_summary"].fillna("").tolist(),
     hover_text_html_template=hover_template,
     extra_point_data=extra_data,
