@@ -11,6 +11,9 @@
   .bottom-left {
     display: flex !important;
   }
+  .stack {
+    max-height: 40dvh !important;
+  }
 }
 
 #text-search {
